@@ -13,7 +13,7 @@
             box-sizing: border-box;
             padding: 0;
             margin: 0;
-            font-family: "Alexandria", sans-serif;
+            font-family: "Alexandria", Helvetica, Arial, sans-serif;
         }
 
         body {
@@ -21,12 +21,10 @@
             color: #13141A;
         }
 
-        main {
+        .main {
             width: 600px;
+            max-width: 100%;
             margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
             align-items: center;
             padding: 50px 0;
         }
@@ -110,10 +108,7 @@
             border: 1px dashed rgba(105, 93, 253, 1);
             padding: 20px;
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 20px;
+            text-align: center;
         }
 
         .flex {
@@ -146,10 +141,10 @@
 </head>
 
 <body>
-    <main>
-        <a href="#"><img src="https://yusrahassni.github.io/carsmart-emails/assets/Logo.png" alt="Logo" class="top-logo"></a>
+    <div class="main">
+        <a href="#" style="display: block; margin-bottom:20px; text-align:center;"><img src="https://yusrahassni.github.io/carsmart-emails/assets/Logo.png" alt="Logo" class="top-logo"></a>
         <div class="card text-center" style="padding: 40px 24px;">
-            <div class="flex-main1">
+            <div>
                 <div style="margin-bottom: 30px;">
                     <div style=" text-align: center; margin-bottom: 24px;">
                         <h5 style="font-size: 22px; margin-bottom: 14px; font-weight: 500;"
@@ -171,8 +166,8 @@
                 </p>
                 <div class="border" style="margin-bottom: 30px;"></div>
                 <div class="help-box">
-                    <img src="https://yusrahassni.github.io/carsmart-emails/assets/Help-Avatar.png" alt="Avatar" class="help-avatar" style="height: 56px;">
-                    <div>
+                    <img src="https://yusrahassni.github.io/carsmart-emails/assets/Help-Avatar.png" alt="Avatar" class="help-avatar" style="height: 56px; margin-bottom: 20px;">
+                    <div style=" margin-bottom: 20px;">
                         <h5 class="fw-medium text-dark" style="font-size: 16px; margin-bottom: 6px;">Need help? Contact our team</h5>
                         <div class="flex items-center content-center" style="gap: 10px;">
                             <a class="flex items-center content-center hb-link" style="gap: 6px;">
@@ -191,7 +186,7 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
