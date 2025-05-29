@@ -22,6 +22,20 @@
         background-repeat: repeat;
         padding: 0px;
       }
+               .card-outer {
+              width: fit-content;
+                padding: 1px;
+                overflow: hidden;
+                border-radius: 22px;
+                background-image: linear-gradient(165deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 50%);
+            }
+
+            .co-bg {
+              width: fit-content;
+                background-color: rgba(23, 23, 58, 1);
+                overflow: hidden;
+                border-radius: 22px;
+            }
     </style>
   </head>
 
@@ -110,7 +124,9 @@
               </td>
             </tr>
             <!-- Car Info -->
-            <tr>
+            <div class="card-outer">
+                <div class="co-bg">
+                    <tr>
               <td align="center" style="padding: 40px 24px">
                 <!-- Registration Plate -->
                 <table
@@ -504,6 +520,8 @@
                 </table>
               </td>
             </tr>
+                </div>
+            </div>
             <tr>
               <td style="padding: 15px 40px;">
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
