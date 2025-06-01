@@ -10,11 +10,26 @@
       rel="stylesheet"
     />
     <style>
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card-outer {
+      width: fit-content;
+      padding: 1px;
+      overflow: hidden;
+      border-radius: 22px;
+      background-image: linear-gradient(165deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+
+    .co-bg {
+      width: fit-content;
+      background-color: rgba(23, 23, 58, 1);
+      overflow: hidden;
+      border-radius: 22px;
+    }
       .bg {
         background-color: #675df4;
         background-image: url(https://yusrahassni.github.io/carsmart-emails/assets/top-bg-dark.png);
@@ -65,7 +80,9 @@
     >
       <tr>
         <td align="center" style="padding-bottom: 10px">
-          <table
+          <div class="card-outer">
+            <div class="co-bg">
+              <table
             width="600"
             cellpadding="0"
             cellspacing="0"
@@ -608,6 +625,8 @@
               </td>
             </tr>
           </table>
+            </div>
+          </div>
         </td>
       </tr>
     </table>
